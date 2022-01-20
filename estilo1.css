@@ -153,11 +153,16 @@ footer nav{
     position: relative;
 }
 
-footer nav > img {
+footer nav > ul {
+    display: flex;
+    list-style: none;
+}
+
+footer nav > ul > li > img {
     width: 40px;
 }
 
-footer nav > img:nth-child(2) {
+footer nav > ul > li {
     margin: 0px 7px;
 }
 
@@ -173,7 +178,7 @@ footer small p:nth-child(2) {
 
 footer nav::after{
     content: '';
-    width: 145px;
+    width: 162px;
     border-bottom: white 2px solid;
     position: absolute;
     left: 0px;
