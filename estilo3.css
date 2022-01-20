@@ -1,0 +1,56 @@
+@media (max-width: 761px) {
+    body {
+        background-image: url('./design/pexels-lukas-618775\ \(2\).jpg');
+        background-size: 150%;
+        background-position: center;
+        background-position-y: 0px;
+    }
+
+    header .borda{
+        padding: 5px 5px;
+    }
+    
+    header h1{
+        font-size: 3em;
+    }
+    
+    header img{
+        width: 85px;
+        margin-right: 5px;
+    }
+
+    main {
+        font-size: 1.5em;
+    }
+
+}
+
+@media (max-width: 500px) {
+    header .borda{
+        padding: 5px 5px;
+        border: 2px solid var(--corMain)
+    }
+    
+    header h1{
+        font-size: 1.5em;
+    }
+    
+    header img{
+        width: 45px;
+        margin-right: 5px;
+    }
+
+    main {
+        font-size: 1.3em;
+    }
+
+    .info, .formulario{
+        width: 95%;
+        padding: 10px;
+        border-radius: 0px;
+    }
+
+    .info svg, .formulario svg {
+        width: 20px;
+    }
+}

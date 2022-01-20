@@ -1,0 +1,43 @@
+@media (max-width: 1077px) {
+    body {
+        background-image: url('./design/pexels-lukas-618775\ \(1\).jpg');
+        background-size: 150%;
+        background-position: center;
+        background-position-y: 0px;
+    }
+
+    header .borda{
+        padding: 5px 10px;
+    }
+    
+    header h1{
+        font-size: 4em;
+    }
+    
+    header img{
+        width: 100px;
+        margin-right: 10px;
+    }
+
+/*----*/
+
+    main {
+        flex-direction: column;
+        align-items: center;
+        /* font-size: 1.5em; */
+        margin-top: 60px;
+    }
+
+    .info{
+        background-color: #dfbd9d7e;
+        padding: 20px;
+        border-radius: 20px;
+        width: 80%;
+        color: white;
+    }
+
+    .formulario {
+        margin: 20px 0px;
+        width: 80%;
+    }
+}
