@@ -3,20 +3,26 @@ function take(query) {
 }
 
 function mensagemErro(elemento,mensagem) {
-    const campoMensagem = document.createElement('div');
-    campoMensagem.classList.add('mensagemErro');
-    campoMensagem.innerHTML = mensagem;
-    elemento.parentNode.after(campoMensagem);
+        let campoMensagem;
+        elemento.classList.add('input-invalido');
+
+        if(elemento.id === 'meuNome'){
+            campoMensagem = take('#erroNome');
+        } else if(elemento.id === 'meuEmail'){
+            campoMensagem = take('#erroEmail');
+        }
+
+        campoMensagem.innerHTML = '🚫 '+mensagem;
+        elemento.parentNode.after(campoMensagem);
 }
 
 function validarNome(n){
-    if(n.value === ''){
-        console.log('Tá vazio isso ae!');
-        n.classList.add('input-invalido');
 
-        mensagemErro(n,'O campo de nome não foi preenchido corretamente.');
-    } else {
-        console.log('Agora sim');
+    //fazer um Switch
+    if(n.value === ''){
+        mensagemErro(n,'O campo de nome não foi preenchido.');
+    } else if (n.value.length > 50){
+        mensagemErro(n,'O campo de nome deve conter até 50 caracteres.');
     }
 }
 

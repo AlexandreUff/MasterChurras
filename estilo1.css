@@ -196,16 +196,9 @@ footer nav::after{
     color: white;
     font-size: 0.5em;
     text-align: center;
-    -webkit-text-stroke-width: 0.5px; /* largura da borda */
     -webkit-text-stroke-color: #ff7d7d;
-    
-
+    -webkit-text-stroke-width: 0.5px;
     margin-right: 5px;
-
-    /* width: 515px; */
-    width: 81%; /*Ver isso no modo celular*/
+    width: 81%; 
     align-self: flex-end;
-
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
 }
