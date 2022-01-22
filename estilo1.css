@@ -82,7 +82,7 @@ main {
     flex-direction: column;
     justify-content: center;
     background-color: #a8753680;
-    padding: 20px;
+    padding: 10px;
     color: white;
     margin-right: 20px;
     border-radius: 20px;
@@ -183,4 +183,27 @@ footer nav::after{
     position: absolute;
     left: 0px;
     top: 53px;
+}
+
+.input-invalido{
+    background-color: #dc143c81;
+    color: #ff7d7d;
+    outline: 1px #ffa500 solid;
+}
+
+.mensagemErro{
+    display: block;
+    color: white;
+    font-size: 0.5em;
+    text-align: center;
+    background-color: #ff7d7d;
+
+    margin-right: 5px;
+
+    /* width: 515px; */
+    width: 81%; /*Ver isso no modo celular*/
+    align-self: flex-end;
+
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
