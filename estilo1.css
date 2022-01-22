@@ -196,7 +196,9 @@ footer nav::after{
     color: white;
     font-size: 0.5em;
     text-align: center;
-    background-color: #ff7d7d;
+    -webkit-text-stroke-width: 0.5px; /* largura da borda */
+    -webkit-text-stroke-color: #ff7d7d;
+    
 
     margin-right: 5px;
 
