@@ -17,16 +17,26 @@ function mensagemErro(elemento,mensagem) {
 }
 
 function validarNome(n){
-
-    //fazer um Switch
+            //As únicas retrições ao nome são apenas essas mesmas.
     if(n.value === ''){
         mensagemErro(n,'O campo de nome não foi preenchido.');
     } else if (n.value.length > 50){
         mensagemErro(n,'O campo de nome deve conter até 50 caracteres.');
-    }
+    } 
 }
 
 function validarEmail(e) {
+
+    const regexEmail = /[a-zA-z0-9.]+@[a-zA-z0-9]+.?([a-z])*\.[a-z]{1,3}/g;
+
+    if(e.value === ''){
+        mensagemErro(e,'O campo de e-mail não foi preenchido.');
+    } else if (e.value.length > 100){
+        mensagemErro(e,'O campo de nome deve conter até 100 caracteres.');
+    } else if (!regexEmail.test(e.value)){
+        mensagemErro(e,'Endereço de e-mail inválido.');
+        console.log(regexEmail.test(e))
+    }
 }
 
 function envioDeFormulario(e) {
