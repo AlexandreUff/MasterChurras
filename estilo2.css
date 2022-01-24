@@ -40,4 +40,10 @@
         margin: 20px 0px;
         width: 80%;
     }
+
+    .pop-up-mensagem{
+        margin-top: 20px;
+        font-size: 1.5em;
+    }
+    
 }

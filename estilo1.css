@@ -202,3 +202,38 @@ footer nav::after{
     width: 81%; 
     align-self: flex-end;
 }
+
+.fundo-mensagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0000007e;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+}
+
+.pop-up-mensagem{
+    background-color: #DFBD9D;
+    text-align: center;
+    width: 40%;
+    height: 40%;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 3px black solid;
+    font-size: 2em;
+    font-family: 'Oswald', sans-serif;
+}
+
+.pop-up-mensagem > p.titulo{
+    background-color: #9E403F;
+    color: white;
+    padding: 10px;
+}
+
+.pop-up-mensagem > p:not(.titulo){
+    margin-top: 10px;
+    padding: 5px;
+}
