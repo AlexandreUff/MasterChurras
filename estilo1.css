@@ -235,6 +235,6 @@ footer nav::after{
 }
 
 .pop-up-mensagem > p:not(.titulo){
-    margin-top: 10px;
+    /* margin-top: 10px; */
     padding: 5px;
 }
