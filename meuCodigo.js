@@ -49,7 +49,8 @@ function validarEmail(e) {
 function confirmacaoDeEnvio(){
     const msgBG = document.createElement('div');
     msgBG.onclick = function() {
-        this.parentNode.removeChild(this);
+        //this.parentNode.removeChild(this);
+        location.reload();
     }
     msgBG.classList.add('fundo-mensagem');
 
