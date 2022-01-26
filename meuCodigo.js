@@ -1,3 +1,5 @@
+(function() {
+    
 function take(query) {
     return document.querySelector(query);
 }
@@ -80,3 +82,24 @@ function envioDeFormulario(e) {
 const formulario = take('.formulario');
 
 formulario.addEventListener('submit',envioDeFormulario);
+
+})();
+
+console.log(
+    `Olá!
+
+    *Tecnologias usadas:
+    - HTML;
+    - CSS;
+    - Javascript.
+
+    *Objetivo da página:
+    - Landing Page responsiva de um formulário de envio.
+
+    *Funcionalidades objetivas e técnicas:
+    - A página tem apenas como finalidade a sua apresentação ao usuário com um formulário que apenas detecta se o mesmo foi preenchido ou se encontra-se vazio. Caso não esteja preenchido ou esteja preenchido de forma excessiva, os respectivos campos apresentarão uma mensagem de alerta para cada caso;
+    - Os valores de "excesso" são arbitrários. Não há uma razão específica para esse bloqueio de excesso em específico dessa Landing Page. Estes foram baseados apenas em uma breve pesquisa. Entretanto, integram uma funcionalidade bastante comum para preenchimento de formulário que bloqueia excessos de caracteres com base em regulamentos próprios do desenvolvedor ou a critério do cliente;
+    - Caso todos os campos de input estejam corretamente preenchidos, a mensagem de confirmação será exibida.
+    
+    `
+)
